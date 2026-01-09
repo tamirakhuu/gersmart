@@ -1,11 +1,290 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GerSmart</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="icon" sizes="192x192" href="assets/favicon-192x192.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="shortcut icon" href="assets/logoo.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
-    
+
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <div class="logo">
+      <img src="assets/logo.png" alt="GerSmart Logo">
+    </div>
+    <div class="menu-toggle" id="menuBtn">
+      <i class="bi bi-list"></i>
+    </div>
+    <nav id="mobileMenu" class="mobile-menu"> 
+      <a href="index.html">Эхлэл</a>
+      <a href="about.html">Бидний тухай</a>
+      <a href="product.html">Бүтээгдэхүүн</a>
+      <a href="news.html">Мэдээ</a>
+      <a href="contact.html">Холбоо барих</a>
+    </nav>
+  </div>
+</header>
+
+<div id="mobileDrawer">
+  <button id="drawerClose">×</button>
+  <a href="index.html">Нүүр</a>
+  <a href="about.html">Бидний тухай</a>
+  <a href="product.html">Бүтээгдэхүүн</a>
+  <a href="news.html">Мэдээ</a>
+  <a href="#footer">Холбоо барих</a>
+</div>
+
+
+<div id="splash">
+  <div class="splash-wrap">
+    <div class="iot-core">
+      <span></span><span></span><span></span><span></span>
+    </div>
+    <div id="typeLogo"></div>
+  </div>
+</div>
+
+<section id="home" class="hero">
+  <div id="vanta-bg"></div>
+
+  <div class="hero-content fade-in">
+    <img src="assets/logo.png" alt="Gersmart" class="hero-logo">
+    <p id="heroSwap">CALM AND COMFORTABLE</p>
+  </div>
+</section>
+
+<section id="services" class="section light">
+  <h2>БҮТЭЭГДЭХҮҮН</h2>
+  <div class="grid">
+    <div class="card fade-in">
+      <i class="bi bi-house-door"></i>
+      <h3>Smart Home</h3>
+      <p>Хувь хүнд зориулсан бүтээгдэхүүн.</p>
+    </div>
+
+    <div class="card fade-in">
+      <i class="bi bi-cpu"></i>
+      <h3>Automation</h3>
+      <p>Байгууллагад зориулсан бүтээгдэхүүн.</p>
+    </div>
+
+    <div class="card fade-in">
+      <i class="bi bi-code-slash"></i>
+      <h3>Web & App</h3>
+      <p>Тусгайлсан шийдэл.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section stats">
+  <div class="grid">
+    <div class="stat fade-in">
+      <i class="bi bi-people"></i>
+      <h2 class="counter" data-target="650">650</h2>
+      <p>Сэтгэл ханамжтай хэрэглэгч</p>
+    </div>
+
+    <div class="stat fade-in">
+      <i class="bi bi-house-check"></i>
+      <h2 class="counter" data-target="45">45</h2>
+      <p>Амжилттай төслүүд</p>
+    </div>
+
+    <div class="stat fade-in">
+      <i class="bi bi-globe"></i>
+      <h2 class="counter" data-target="24">24</h2>
+      <p>Хотод үйлчилгээ</p>
+    </div>
+
+    <div class="stat fade-in">
+      <i class="bi bi-award"></i>
+      <h2 class="counter" data-target="4">4</h2>
+      <p>Жилийн туршлага</p>
+    </div>
+  </div>
+</section>
+
+<section id="news-list" class="section light">
+  <div id="vanta-bg-news"></div>
+
+  <div class="news-head fade-in">
+    <h2>ШИНЭ МЭДЭЭ, ҮЙЛ ЯВДЛУУД</h2>
+  </div>
+
+  <div class="news-grid">
+
+    <article class="news-card fade-in">
+      <div class="news-thumb">
+        <img src="assets/Mstarshub.jpg">
+      </div>
+      <div class="news-body">
+        <h3>2022-03-14</h3>
+        <p>
+          МСтарс Хаб хөтөлбөрийн Ger Smart стартап хөрөнгө
+          оруулагчдаас хөрөнгө оруулалтын санал авч чадлаа
+        </p>
+        <a href="news/news-mstars.html">Дэлгэрэнгүй →</a>
+      </div>
+    </article>
+
+    <article class="news-card fade-in">
+      <div class="news-thumb">
+        <img src="assets/newversion.jpg">
+      </div>
+      <div class="news-body">
+        <h3>2022-02-22</h3>
+        <p>Шинэ app update амжилттай нэвтэрлээ…</p>
+        <a href="#">Дэлгэрэнгүй →</a>
+      </div>
+    </article>
+
+    <article class="news-card fade-in">
+      <div class="news-thumb">
+        <img src="assets/Gersmart.jpg">
+      </div>
+      <div class="news-body">
+        <h3>2022-02-08</h3>
+        <p>GerSmart - Ухаалаг гэр тайван бас тухтай</p>
+        <a href="#">Дэлгэрэнгүй →</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section id="partners" class="section dark">
+  <h2 class="fade-in">ХАМТРАГЧ БАЙГУУЛЛАГУУД</h2>
+
+  <div class="partner-swiper">
+
+    <button class="p-btn left" id="pPrev">‹</button>
+
+    <div class="partner-slider">
+      <div class="partner-track" id="partnerTrack">
+
+        <div class="partner-slide">
+          <img src="assets/storepay.jpg">
+          <img src="assets/milesight.svg">
+          <img src="assets/orshil.png">
+          <img src="assets/gegeen.png">
+        </div>
+
+        <div class="partner-slide">
+          <img src="assets/ventures.png">
+          <img src="assets/tuya.png">
+          <img src="assets/gan.png">
+          <img src="assets/mstarshub.png">
+        </div>
+
+        <div class="partner-slide">
+          <img src="assets/zochil.jpg">
+          <img src="assets/tp-link.png">
+          <img src="assets/tomilake.png">
+          <img src="assets/tenon.png">
+        </div>
+
+        <div class="partner-slide">
+          <img src="assets/taichuan.png">
+          <img src="assets/huawei.svg">
+          <img src="assets/simple.png">
+        </div>
+
+      </div>
+    </div>
+
+    <button class="p-btn right" id="pNext">›</button>
+
+  </div>
+</section>
+
+<section class="section testimonials">
+  <h2>ХЭРЭГЛЭГЧДИЙН СЭТГЭГДЭЛ</h2>
+
+  <div class="review-wrap">
+    <div class="review active">
+      <p>“GerSmart-ийнхандаа баярлалаа. Амьдрал илүү тайван боллоо.”</p>
+      <h4>Тамир</h4>
+    </div>
+
+    <div class="review">
+      <p>“Суулгалт хурдан, апп ойлгомжтой. Маш найдвартай.”</p>
+      <h4>Номин</h4>
+    </div>
+
+    <div class="review">
+      <p>“Үнэ цэнтэй үйлчилгээ байна. Найзууддаа санал болгож байгаа.”</p>
+      <h4>Мөнхбат</h4>
+    </div>
+  </div>
+</section>
+
+<section class="section location">
+  <h2>МАНАЙ БАЙРШИЛ</h2>
+
+  <div class="location-wrap">
+    <div class="location-text">
+      <h3>GerSmart</h3>
+      <p>
+        Улаанбаатар хот, Сүхбаатар дүүрэг, 8-р хороо,<br>
+        Бээжингийн гудамж, Мэйсон барилга, 6 давхар 603 тоот
+      </p>
+      <p>
+        📞 7777-9992<br>
+        ✉ info@gersmart.mn
+      </p>
+    </div>
+
+    <div class="location-map">
+      <iframe
+src="https://www.google.com/maps/embed?pb=!1m13!1m11!1m3!1d996.0435691392291!2d106.926037079419!3d47.92272814044319!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2smn!4v1767713286851!5m2!1sen!2smn"        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Copyright Misheel Orshikh LLC. All Rights Reserved
+</footer>
+
+<a href="https://m.me/gersmartapp" class="chat-float" target="_blank">
+  <i class="bi bi-messenger"></i>
+</a>
+
+<a href="#home" class="scroll-top" id="scrollTop">
+  <i class="bi bi-arrow-up-short"></i>
+</a>
+
+<script src="script.js"></script>
+<script src="bg3d.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+<script src="assets/js/vanta.globe.min.js"></script>
+
+<script>
+  VANTA.GLOBE({
+    el: "#vanta-bg",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    scale: 1,
+    scaleMobile: 1,
+    color: 0x60a5fa,
+    color2: 0x3b82f6,
+    backgroundColor: 0x020617,
+    size: 1.15,
+    spacing: 0,
+    points: 0
+  });
+</script>
+
 </body>
 </html>

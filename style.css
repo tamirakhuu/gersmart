@@ -1,0 +1,108 @@
+/* == Base & Reset == */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* == Header == */
+.site-header {
+  background: #111;
+  padding: 1rem 0;
+  color: white;
+}
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+}
+.main-nav ul {
+  display: flex;
+  gap: 1.5rem;
+}
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.btn-primary {
+  background: #0066ff;
+  color: white;
+  padding: .6rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.btn-primary:hover {
+  background: #0051cc;
+}
+
+/* == Hero == */
+.hero-section {
+  background: #eef2ff;
+  text-align: center;
+  padding: 4rem 0;
+}
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: .8rem;
+}
+.hero-section p {
+  margin-bottom: 1.5rem;
+}
+.btn-secondary {
+  background: #ff6f61;
+  color: white;
+  padding: .6rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* == Content Sections == */
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 1200px;
+  padding: 2rem 0;
+}
+.about-section,
+.products-section,
+.news-section {
+  padding: 2rem 0;
+}
+.products-section .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.4rem;
+}
+.card {
+  background: white;
+  padding: 1.4rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.news-card {
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #0066ff;
+}
+
+/* == Footer == */
+.site-footer {
+  background: #111;
+  color: #ddd;
+  text-align: center;
+  padding: 2rem 0;
+}
