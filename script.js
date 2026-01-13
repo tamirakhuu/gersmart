@@ -1,21 +1,26 @@
-const mBtn = document.getElementById("menuBtn");
-const drawer = document.getElementById("mobileDrawer");
-const drawerClose = document.getElementById("drawerClose");
+document.addEventListener("DOMContentLoaded", () => {
 
-if(mBtn && drawer){
-  mBtn.onclick = ()=> drawer.classList.add("show");
-}
+  const mBtn = document.getElementById("menuBtn");
+  const drawer = document.getElementById("mobileDrawer");
+  const drawerClose = document.getElementById("drawerClose");
 
-if(drawerClose){
-  drawerClose.onclick = ()=> drawer.classList.remove("show");
-}
+  if (mBtn && drawer) {
+    mBtn.onclick = () => drawer.classList.add("show");
+  }
 
-if(drawer){
-  drawer.querySelectorAll("a").forEach(a=>{
-    a.onclick = ()=> drawer.classList.remove("show");
-  });
-}
-;
+  if (drawerClose && drawer) {
+    drawerClose.onclick = () => drawer.classList.remove("show");
+  }
+
+  if (drawer) {
+    drawer.querySelectorAll("a").forEach(a => {
+      a.onclick = () => drawer.classList.remove("show");
+    });
+  }
+
+});
+
+
 
 
 const faders = document.querySelectorAll(".fade-in");
