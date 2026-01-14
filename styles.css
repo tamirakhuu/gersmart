@@ -298,16 +298,27 @@ p{font-size:.9rem}
 
 /* medee*/
 .news-grid{
-  grid-template-columns:1fr;
-}
+    grid-template-columns: repeat(2, 1fr);
+    gap:14px;
+  }
 .news-card{
   display:flex;
   flex-direction:column;
+  border-radius: 14px;
 }
 .news-thumb img{
   height:200px;
   object-fit:cover;
 }
+.news-thumb{ height:130px; }
+.news-body h3{
+    font-size:.9rem;
+  }
+  .news-body p{
+    font-size:.8rem;
+    line-height:1.45;
+  }
+
 .hero-content h1{
   font-size:1.7rem;
 }
