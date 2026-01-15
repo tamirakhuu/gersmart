@@ -35,7 +35,9 @@ footer,footer *,
 .section,
 .section *,
 .tab-btn,
-.tab-btn *{
+.tab-btn *
+.privacy-title,
+.privacy-title *{
   font-family:'Comfortaa',sans-serif;
   letter-spacing:.6px;
 }
