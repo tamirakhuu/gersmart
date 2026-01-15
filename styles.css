@@ -1,4 +1,4 @@
-*{margin:0;padding:0;box-sizing:border-box}
+chi endees dawhardsan codenuudig arilgaj tsewerhen tsegtstei bolgoj ug *{margin:0;padding:0;box-sizing:border-box}
 
 /* variable */
 :root{
@@ -190,7 +190,28 @@ footer{text-align:center;padding:36px 20px;background:var(--dark);color:var(--so
 .scroll-top{right:16px;bottom:86px}
 .chat-float{right:16px;bottom:22px}
 }
+#mobileDrawer{
+  position:fixed;
+  inset:0;
+  background:rgba(2,6,23,.98);
+  backdrop-filter:blur(26px);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:28px;
+  z-index:99999;
+  opacity:0;
+  pointer-events:none;
+  transition:.45s cubic-bezier(.2,.9,.2,1);
+}
 
+#mobileDrawer a{
+  font-size:1.45rem;
+  text-decoration:none;
+  color:white;
+  letter-spacing:1px;
+}
 #mobileDrawer.show{
   opacity:1;
   pointer-events:auto;
@@ -599,7 +620,6 @@ footer{
     height: 70px;
   }
 }
-
 
 
 
